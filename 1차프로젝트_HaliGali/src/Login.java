@@ -10,7 +10,7 @@ public class Login extends JPanel{
 	
 	public Login(){
 		
-		back=Toolkit.getDefaultToolkit().getImage("C:\\image\\monkey_back3.jpg");		//LOGIN창 배경이미지
+		back=Toolkit.getDefaultToolkit().getImage("img/monkey_back3.jpg");		//LOGIN창 배경이미지
 		lab1=new JLabel("ID");						//선언부
 		lab2=new JLabel("PW");
 		tf=new JTextField();

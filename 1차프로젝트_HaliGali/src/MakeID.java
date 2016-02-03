@@ -13,10 +13,10 @@ public class MakeID extends  JFrame implements ActionListener{	//JDialog,등등 다
 	JButton b1,b2,b3;
 	JButton ic1,ic2,ic3,ic4;
 	
-	ImageIcon i1=new ImageIcon("c:\\image\\11_50.png");
-	ImageIcon i2=new ImageIcon("c:\\image\\22_50.png");
-	ImageIcon i3=new ImageIcon("c:\\image\\33_50.png");
-	ImageIcon i4=new ImageIcon("c:\\image\\44_50.png");
+	ImageIcon i1=new ImageIcon("img/11_50.png");
+	ImageIcon i2=new ImageIcon("img/22_50.png");
+	ImageIcon i3=new ImageIcon("img/33_50.png");
+	ImageIcon i4=new ImageIcon("img/44_50.png");
 	
 	public MakeID(){
 		la1=new JLabel("이름");
