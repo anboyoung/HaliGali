@@ -11,10 +11,12 @@ public class ClientMainForm extends JFrame implements ActionListener{
 		MakeID mID=new MakeID();					//회원가입창
 		
 		public ClientMainForm(){
-			setLayout(card);		//BorderLayout
 
+			setLayout(card);		//BorderLayout
+			
 			add("LOG",login);		//2.login창
 			setSize(800,600);		//window창 크기 설정
+			setLocation(270, 170);	//window창 위치 설정
 			setVisible(true);		//보여지게 함
 			setResizable(false);    //window창 고정(늘어나지 않음)
 					
@@ -33,7 +35,7 @@ public class ClientMainForm extends JFrame implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			if(e.getSource()==login.bt1){				    //버튼(bt1)에 액션이 가해지면
-				mID.setBounds(255, 180,340,380);
+				mID.setBounds(470, 310,340,420);
 				mID.setVisible(true);											//팝업창으로 회원가입창 띄우기
 			}else if(e.getSource()==login.bt2){
 				card.show(getContentPane(), "WR");			//Layout에 "WR"card를 상단으로 보여지게 하라

@@ -7,6 +7,8 @@ public class Login extends JPanel{
 	JTextField tf;			//ID
 	JPasswordField pf;		//비밀번호
 	JButton bt1,bt2;		//회원가입,login버튼
+	ImageIcon joinButton=new ImageIcon("img/JoinButton2.png");
+	ImageIcon loginButton=new ImageIcon("img/LoginButton.png");
 	
 	public Login(){
 		
@@ -15,8 +17,8 @@ public class Login extends JPanel{
 		lab2=new JLabel("PW");
 		tf=new JTextField();
 		pf=new JPasswordField();
-		bt1=new JButton("회원가입");
-		bt2=new JButton("LOGIN");
+		bt1=new JButton(joinButton);
+		bt2=new JButton(loginButton);
 		
 		setLayout(null);							//사용자 직접 배치!!
 		JPanel p=new JPanel();
@@ -27,8 +29,12 @@ public class Login extends JPanel{
 		tf.setBounds(45, 15, 150, 30);			//0,0기준으로 10+30=40,15는 간격
 		lab2.setBounds(10, 50, 30, 30);			//높이:15+30+5(간격)=50
 		pf.setBounds(45, 50, 150, 30);
-		bt1.setBounds(15, 95, 90, 30);			
-		bt2.setBounds(120, 95, 90, 30);
+		bt1.setBounds(15, 95, 90, 40);			
+		bt2.setBounds(120, 95, 90, 40);
+		bt1.setBorderPainted(false);
+		bt1.setContentAreaFilled(false); 
+		bt2.setBorderPainted(false);
+		bt2.setContentAreaFilled(false); 
 		
 		p.setOpaque(false); 					//JPanel묶은것 회색을 투명하게!
 		
